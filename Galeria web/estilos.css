@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Poppins:ital,wght@0,400;1,100;1,300&display=swap'); 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    background: #1F1F1F;
+}
+
+.container {
+    min-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    background-image: url(img/descarga.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 44px;
+    color:  #f48332;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-right: 5px;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+} 
+
+.menu .navbar ul li a {
+    font-size: 28px;
+    padding: 10px;
+    color:  #f48332;
+    display: block;
+}
+
+.menu .navbar ul li a:hover {
+    background-color:  #c56520;
+    border-radius: 15px;
+    color: #FFFFFF;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
