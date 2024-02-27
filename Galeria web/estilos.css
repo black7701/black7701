@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&family=Poppins:ital,wght@0,400;1,100;1,300&display=swap'); 
 
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -19,13 +21,14 @@ body {
 }
 
 .header {
-    background-image: url(img/descarga.jpg);
+    background-image: url(img/f2.jpg);
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 70vh;
     display: flex;
     align-items: center;
+    z-index: -2000;
 }
 
 .menu {
@@ -55,7 +58,7 @@ body {
 .menu .navbar ul li a {
     font-size: 28px;
     padding: 10px;
-    color:  #f48332;
+    color:  #FFFFFF;
     display: block;
 }
 
@@ -76,4 +79,75 @@ body {
 .menu label {
     cursor: pointer;
     display: none;
+}
+
+.header-txt {
+    text-align: center;
+
+}
+
+.header-txt h1 {
+    font-size: 150px;
+    color: #d73c11; 
+}
+
+.header-txt P {
+    margin: 0 250PX;
+    padding: 25px 0;
+    font-size: 20px;
+    color: #AFAFAF;
+}
+
+.section-galery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+section{
+    display: flex;
+    width: 1000px;
+    height: 430px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+section img {
+    width: 0px;
+    flex-grow:1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;   
+
+}
+
+section img:hover {
+    cursor: crosshair;
+    width: 300px;
+    height: 650px;
+    opacity: 1;
+    filter: contrast(100%);
+}
+
+.btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.btn  a{
+    text-decoration: none;
+    color: #AFAFAF;
+    font-size: 24px;
+    margin: 10px;
+    background-color: #d73c11;
+    width: 125px;
+    text-align: center;
+    border-radius: 10px;
+
 }
